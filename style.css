@@ -25,6 +25,11 @@ body.dark{
 }
 
 header{
+    width : 100%;
+    background-color: var(--element);
+}
+
+.header-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
