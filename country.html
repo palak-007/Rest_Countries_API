@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link rel="stylesheet" href="country.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="left-section">
+                <a href="index.html">Where in the world?</a>
+            </div>
+            <div class="mode-div">
+                <i class="fa-regular fa-moon"></i>
+                <div class="mode-text">Dark Mode</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-div">
+        <div class="back-button" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back
+        </div>
+
+        <div class="container">
+            <div class="flag">
+                <img src="" alt="">
+            </div>
+
+            <div class="right-section">
+                <div class="details-div">
+                    <h1></h1>
+                    <div class="details">
+                        <div class="row-div">
+                            <div><b>Native Name: </b><span class="name"></span></div>
+                            <div><b>Top Level Domain: </b><span class="domain"></span></div>
+                        </div>
+    
+                        <div class="row-div">
+                            <div><b>Population: </b><span class="population"></span></div>
+                            <div><b>Currencies: </b><span class="currency"></span></div>
+                        </div>
+    
+                        <div class="row-div">
+                            <div><b>Region: </b><span class="region"></span></div>
+                            <div><b>Languages: </b><span class="language"></span></div>
+                        </div>
+    
+                        <div class="row-div">
+                            <div><b>Sub Region: </b><span class="subRegion"></span></div>
+                        </div>
+                        <div class="row-div">
+                            <div><b>Capital: </b><span class="capital"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="countries-div">
+                    <div><b>Border Countries: </b></div>
+                    <div class="countries"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="country.js"></script>
+</body>
+
+</html>

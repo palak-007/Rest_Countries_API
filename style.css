@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nunito Sans';
+    color: var(--text);
+}
+
+body{
+    --element : hsl(0, 0%, 100%);
+    --background : hsl(0, 0%, 98%);
+    --inputText : hsl(0, 0%, 52%);
+    --text : hsl(200, 15%, 8%);
+    --shadowColor : rgba(188, 185, 185, 0.32);
+
+    background-color: var(--background);
+    position: relative;
+}
+
+body.dark{
+    --element : hsl(209, 23%, 22%);
+    --background : hsl(207, 26%, 17%);
+    --inputText : hsl(0, 0%, 100%);
+    --text : hsl(0, 0%, 100%);
+    --shadowColor : hsla(208, 23%, 22%, 0.589);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    max-width: 1900px;
+    position: sticky;
+    top: 0;
+    margin-inline: auto;
+    background-color: var(--element);
+    padding-inline: 5rem;
+    box-shadow: 2px 2px 15px var(--shadowColor);
+}
+
+.mode-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.8rem;
+    cursor: pointer;
+}
+
+.mode-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.left-section{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.searchFilter-div{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5rem;
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
+.input-div{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-block: 1.2rem;
+    column-gap: 1.5rem;
+    background-color:transparent;
+    max-width: 35rem;
+    width: 100%;
+    box-shadow: 2px 2px 15px var(--shadowColor);
+}
+
+.input-div input{
+    font-size: 1rem;
+    color: var(--inputText);
+    border: none;
+    width: 100%;
+    background-color: var(--background);
+
+}
+
+.input-div input:focus{
+    outline: none;
+}
+
+.filter-div select{
+    border: none;
+    font-size: 1rem;
+    padding: 1.3rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 15px var(--shadowColor);
+    background-color: var(--background);
+}
+
+.filter-div select:focus{
+    outline: none;
+}
+
+.container{
+    margin-inline: auto;
+    margin-block: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    padding: 2rem;
+    max-width: 1800px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+.card{
+    background-color: var(--element);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 20rem;
+    box-shadow: 2px 2px 15px var(--shadowColor);
+    transition: all 0.1s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 15px var(--shadowColor);   
+}
+
+.card h2{
+    padding-left: 1.5rem;
+    font-weight: 800;
+}
+
+.details{
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.details span{
+    font-weight: 700;
+}
+
+.flag-div img{
+    height: 14rem;
+    width: 100%;
+    background-size: contain;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+@media(min-width : 776px) and (max-width : 1000px){
+    .input-div{
+        padding-left: 2rem;
+        padding-block: 1rem;
+        column-gap: 1.5rem;
+        max-width: 25rem;
+    }
+
+    .searchFilter-div{
+        margin-top: 3rem;
+        max-width: 1800px;
+        column-gap: 5rem;
+        margin-inline: 1.5rem;
+        padding: 1rem;
+    }
+    .filter-div select{
+        padding: 1rem;
+    }
+}
+
+@media(max-width : 775px){
+    .searchFilter-div{
+        margin-top: 2.5rem;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 2rem;
+        font-size: 0.8rem;
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .filter-div select{
+        font-size: 0.8rem;
+    }    
+
+    .container{
+        margin-inline: auto;
+        margin-top: 0;
+        column-gap: 5rem;
+        row-gap: 5rem;
+        padding: 2rem;
+    }
+
+    header{
+        padding-inline: 2.5rem;
+    }
+
+    .mode-text{
+        font-size: 1rem;
+    }
+    
+    .left-section{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    
+}
+
