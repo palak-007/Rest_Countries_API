@@ -15,7 +15,7 @@ body{
     background-color: var(--background);
     position: relative;
     width: 100%;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 body.dark{
